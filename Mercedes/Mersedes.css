@@ -1,0 +1,121 @@
+.up{
+    background-color: black;
+}
+.fa{
+    color: white;
+}
+.down{
+    padding-left: 0.5rem;
+    color: white;
+}
+.down>a:hover{
+    color: blue;
+}
+body{
+    background-color: black;
+}
+.downt{
+    font-size: 10px;
+    margin-top: 1rem;
+}
+.downt a{
+    color: darkblue;
+}
+.container{
+    background-color: white;
+}
+.col-lg-3>a{
+    color: blue;
+}
+.p1, .p2, .p3, .p4{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.cen{
+    display: flex;
+    justify-content: center;
+}
+.h{
+    color: gray;
+}
+.Classes>li{
+    background-color: black;
+}
+.back{
+    background-color: darkgray;
+    border: 1px solid black;
+}
+.cen1{
+    display: flex;
+    justify-content: start;
+}
+.con1{
+    background-color:gray;
+}
+.con2{
+    padding-bottom: 14rem;
+}
+.con3{
+    padding-bottom: 28rem;
+}
+.co{
+    background-color: rgb(71, 71, 71);
+}
+.vid{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+button{
+    background-color:rgb(71, 71, 71);
+}
+.con4{
+    padding-bottom: 7rem;
+}
+.but{
+    background-color: white;
+}
+.blo{
+    text-align: start;
+    border-left: 1px solid gray;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+.cont{
+    color:gray;
+}
+.down1{
+    padding-left: 0.5rem;
+    color: black;
+}
+@media only screen and (min-width:700px){
+.dropdown-menu{
+    width: 60vw;
+    margin-left: -30rem;
+}}
+@media only screen and (max-width:700px){
+    .dropdown-menu{
+        width: 480px;
+        margin-left: -9rem;
+        margin-top: 1rem;
+        overflow-x: auto;
+    }
+}
+th{
+    padding-left: 1rem;
+}
+td{
+    padding-left: 1rem;
+}
+.fa1{
+    color: black;
+}
+table a{
+    color: black;
+}
+.col-lg-3 a{
+    color: white;
+}
