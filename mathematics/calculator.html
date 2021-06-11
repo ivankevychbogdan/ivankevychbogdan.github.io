@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24e14e3299.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner-border" role="status">
+        </div>
+    </div>
+    <div id="toTop"></div>
+    <div class="container">
+        <div class="container-fluid header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="https://www.ferra.ru/thumb/570x0/filters:quality(75):no_upscale()/imgs/2018/11/26/16/2586671/44e77f06a28085e2c2a00094eb734ee26ff45a54.jpg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-current="page" href="#history">Історія</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#conclusion">Висновок</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="calculator.html" aria-disabled="true">Калькулятор</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <h2 class="padding">Калькулятор</h2>
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-2">
+                <button class="choose" id="btn-elementary">Елементарна математика</button>
+            </div>
+            <div class="col-md-2">
+                <button class="choose " id="btn-algebra">Алгебра</button>
+            </div>
+            <div class="col-md-2">
+                <button class="choose " id="btn-geometry">Геометрія</button>
+            </div>
+            <div class="col-md-2">
+                <button class="choose " id="btn-graphics">Графіки</button>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <div class="row">
+        <div class="col calculator  col-math-container">
+            <div id="elementary" >
+                <div class="d-flex algebra-inside">
+                    <div id="elementary-wrap" class="btn-elementary btn-elementary-show">
+                        Калькулятор
+                    </div>
+                </div>
+                
+                <div class="elementary-wrap">
+                    <label for="">Введіть числа та виберіть дію</label><br>
+                    <input class="el-input-1 i-elementary mt-3 me-5" type="text"><br>
+                    <input class="el-input-2 i-elementary mt-3 me-5" type="text"><br>
+                    <select class="el-option">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                    <button class="elementary-calc calc mt-3 me-5">Порахувати</button><br>
+                    <div class="result-elementary res mt-3 me-5"></div>
+                </div>
+            </div>
+            <div id="algebra" class="algebra-wrap">
+                <div class="d-flex algebra-inside">
+                    <div class="actions quadratic-equation">
+                        Квадратне рівняння
+                    </div>
+                    <div class="actions power">
+                        Піднесення до корення
+                    </div>
+                    <div class="actions sqrt">
+                        Піднесення до степеня
+                    </div>
+
+                </div>
+                <div class="quadratic-equation-wrap">
+                    <div class="">
+                        <label for="">Введіть коефіцієнти:</label>
+                        <p class="mt-3 me-5">a: <input class="quadr-input-1" type="text"></p>
+                        <p class="me-5">b: <input class="quadr-input-2" type="text"></p>
+                        <p class="me-5">c: <input class="quadr-input-3" type="text"></p>
+                        <button class="quadratic-calc calc">Порахувати</button>
+                        <div class="result-quadratic res"></div>
+                    </div>
+                </div>
+                <div class="power-wrap">
+                    <p class="mt-3 me-5"> <label for="">Введіть число:</label>
+                        <input class="power-input-1" type="text">
+                    </p>
+                    <p class="mt-3 me-5"> <label for="">Введіть степінь:</label>
+                        <input class="power-input-2" type="text">
+                    </p>
+                    <button class="power-calc calc">Порахувати</button>
+                    <div class="result-power res"></div>
+                </div>
+                <div class="sqrt-wrap">
+                    <p class="mt-3 me-5"> <label for="">Введіть число:</label>
+                        <input class="sqrt-input-1" type="text">
+                    </p>
+                    <p class="mt-3 me-5"> <label for="">Введіть корінь:</label>
+                        <input class="sqrt-input-2" type="text">
+                    </p>
+                    <button class="sqrt-calc calc">Порахувати</button>
+                    <div class="result-sqrt res"></div>
+                </div>
+            </div>
+            
+            <div id="geometry" class="geometry-wrap">
+                <div class="d-flex algebra-inside">
+                    <div class="actions geo-button-choose-cos g">
+                        Обчислення косинусів, синусів, тангенсів, котангенсів
+                    </div>
+                    <div class="actions geo-button-choose-kvadrat g">
+                        Дії з квадратом
+                    </div>
+                    <div class="actions geo-button-choose-krug g">
+                        Дії з кругом
+                    </div>
+                    <div class="actions geo-button-choose-pryamokutnik g">
+                        Дії з прямокутником
+                    </div>
+                </div>
+                    <div id="geo-cos" class="geo-wrap">
+                        <label for="">Введіть число та виберіть шукане</label><br>
+                        <input class="geo-input-1 i-elementary mt-3 me-5" type="text"><br>
+                        <select class="geo-option-cos">
+                            <option value="sin">Синус</option>
+                            <option value="cos">Косинус</option>
+                            <option value="tg">Тангенс</option>
+                            <option value="ctg">Котангенс</option>
+                        </select>
+                    <button class="geo-calc calc mt-3 me-5">Порахувати</button><br>
+                    <div class="result-geo res mt-3 me-5"></div>
+                    </div>
+                    <div id="kvadrat" class="geo-wrap">
+                        <div class="d-flex algebra-inside">
+                            <div class="actions Ploscha-kvadrat g">
+                                Площа
+                            </div>
+                            <div class="actions Diagonal-kvadrat g">
+                                Діагональ
+                            </div>
+                            <div class="actions Perimetr-kvadrat g">
+                                Периметр
+                            </div>
+                        </div>
+                        <!-- <select class="geo-option-kvadrat">
+                            <option value="Ploscha-1">Площа</option>
+                            <option value="Diagonal-1">Діаметр</option>
+                            <option value="Perimetr-1">Периметр</option>
+                        </select> -->
+                    
+                    <div class="Ploscha-kvadrat-choose">
+                        
+                        <div id="geo-kvadrat-ploscha" class="geo-wrap">
+                            <p>Через сторону</p>
+                            <label for="">Введіть число</label><br>
+                            <input class="geo-input-kvadrat-ploscha i-elementary mt-3 me-5" type="text"><br>
+                        <button class="geo-calc-kvadrat-ploscha calc mt-3 me-5">Порахувати</button><br>
+                        <div class="result-geo-kvadrat-ploscha res mt-3 me-5"></div>
+                        </div>
+                    </div>
+                    <div class="Diagonal-kvadrat-choose">
+                        
+                        <div id="geo-kvadrat-diagonal" class="geo-wrap">
+                            <p>Через сторону</p>
+                            <label for="">Введіть число</label><br>
+                            <input class="geo-input-kvadrat-diagonal i-elementary mt-3 me-5" type="text"><br>
+                        <button class="geo-calc-kvadrat-diagonal calc mt-3 me-5">Порахувати</button><br>
+                        <div class="result-geo-kvadrat-diagonal res mt-3 me-5"></div>
+                        </div>
+                    </div>
+                    <div class="Perimetr-kvadrat-choose">
+                        
+                        <div id="geo-kvadrat-perimetr" class="geo-wrap">
+                            <p>Через сторону</p>
+                            <label for="">Введіть число</label><br>
+                            <input class="geo-input-kvadrat-perimetr i-elementary mt-3 me-5" type="text"><br>
+                        <button class="geo-calc-kvadrat-perimetr calc mt-3 me-5">Порахувати</button><br>
+                        <div class="result-geo-kvadrat-perimetr res mt-3 me-5"></div>
+                        </div>
+                    </div></div>
+                    <div id="krug" class="geo-wrap">
+                            <div class="d-flex algebra-inside">
+                                <div class="actions Ploscha-krug g">
+                                    Площа
+                                </div>
+                                <div class="actions Radius-krug g">
+                                    Площа сегмента
+                                </div>
+                                <div class="actions Dovjina-krug g">
+                                    Довжина
+                                </div>
+                            </div>
+                            <!-- <select class="geo-option-kvadrat">
+                                <option value="Ploscha-1">Площа</option>
+                                <option value="Diagonal-1">Діаметр</option>
+                                <option value="Perimetr-1">Периметр</option>
+                            </select> -->
+                        <div class="Ploscha-krug-choose">
+                            
+                            <div id="geo-krug-ploscha" class="geo-wrap">
+                                <p>Через радіус</p>
+                                <label for="">Введіть число</label><br>
+                                <input class="geo-input-krug-ploscha i-elementary mt-3 me-5" type="text"><br>
+                            <button class="geo-calc-krug-ploscha calc mt-3 me-5">Порахувати</button><br>
+                            <div class="result-geo-krug-ploscha res mt-3 me-5"></div>
+                            </div>
+                        </div>
+                        <div class="Radius-krug-choose">
+                            
+                            <div id="geo-krug-radius" class="geo-wrap">
+                                <p>Через радіус та кут</p>
+                                <label for="">Введіть числа</label><br>
+                                <input class="geo-input-krug-radius-1 i-elementary mt-3 me-5" type="text"><br>
+                                <input class="geo-input-krug-radius-2 i-elementary mt-3 me-5" type="text"><br>
+                            <button class="geo-calc-krug-radius calc mt-3 me-5">Порахувати</button><br>
+                            <div class="result-geo-krug-radius res mt-3 me-5"></div>
+                            </div>
+                        </div>
+                        <div class="Dovjina-krug-choose">
+                            
+                            <div id="geo-krug-dovjina" class="geo-wrap">
+                                <p>Через радіус</p>
+                                <label for="">Введіть число</label><br>
+                                <input class="geo-input-krug-dovjina i-elementary mt-3 me-5" type="text"><br>
+                            <button class="geo-calc-krug-dovjina calc mt-3 me-5">Порахувати</button><br>
+                            <div class="result-geo-krug-dovjina res mt-3 me-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pryamokutnik" class="geo-wrap">
+                        <div class="d-flex algebra-inside">
+                            <div class="actions Ploscha-pryamokutnik g">
+                                Площа
+                            </div>
+                            <div class="actions Diagonal-pryamokutnik g">
+                                Діагональ
+                            </div>
+                            <div class="actions Perimetr-pryamokutnik g">
+                                Периметр
+                            </div>
+                        </div>
+                        <!-- <select class="geo-option-kvadrat">
+                            <option value="Ploscha-1">Площа</option>
+                            <option value="Diagonal-1">Діаметр</option>
+                            <option value="Perimetr-1">Периметр</option>
+                        </select> -->
+                    
+                    <div class="Ploscha-pryamokutnik-choose">
+                        
+                        <div id="geo-pryamokutnik-ploscha" class="geo-wrap">
+                            <p>Через 2 сторони</p>
+                            <label for="">Введіть число</label><br>
+                            <input class="geo-input-pryamokutnik-ploscha-1 i-elementary mt-3 me-5" type="text"><br>
+                            <input class="geo-input-pryamokutnik-ploscha-2 i-elementary mt-3 me-5" type="text"><br>
+                        <button class="geo-calc-pryamokutnik-ploscha calc mt-3 me-5">Порахувати</button><br>
+                        <div class="result-geo-pryamokutnik-ploscha res mt-3 me-5"></div>
+                        </div>
+                    </div>
+                    <div class="Diagonal-pryamokutnik-choose">
+                        
+                        <div id="geo-pryamokutnik-diagonal" class="geo-wrap">
+                            <p>Через 2 сторони</p>
+                            <label for="">Введіть число</label><br>
+                            <input class="geo-input-pryamokutnik-diagonal-1 i-elementary mt-3 me-5" type="text"><br>
+                            <input class="geo-input-pryamokutnik-diagonal-2 i-elementary mt-3 me-5" type="text"><br>
+                        <button class="geo-calc-pryamokutnik-diagonal calc mt-3 me-5">Порахувати</button><br>
+                        <div class="result-geo-pryamokutnik-diagonal res mt-3 me-5"></div>
+                        </div>
+                    </div>
+                    <div class="Perimetr-pryamokutnik-choose">
+                        
+                        <div id="geo-pryamokutnik-perimetr" class="geo-wrap">
+                            <p>Через 2 сторони</p>
+                            <label for="">Введіть число</label><br>
+                            <input class="geo-input-pryamokutnik-perimetr-1 i-elementary mt-3 me-5" type="text"><br>
+                            <input class="geo-input-pryamokutnik-perimetr-2 i-elementary mt-3 me-5" type="text"><br>
+                        <button class="geo-calc-pryamokutnik-perimetr calc mt-3 me-5">Порахувати</button><br>
+                        <div class="result-geo-pryamokutnik-perimetr res mt-3 me-5"></div>
+                        </div>
+                    </div>
+                    </div>  
+            </div>
+            <div id="graphics" >
+                4
+            </div></div>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
